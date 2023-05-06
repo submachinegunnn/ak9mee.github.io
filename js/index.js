@@ -337,7 +337,7 @@ function discServer5() {
 
                                                     function widgetBot() {
                                                         var win = window.open() 
-                                                        var url = "https://e.widgetbot.io/channels/938658733788131399/939603411366731807"
+                                                        var url = "https://e.widgetbot.io/channels/1104158471454204026/1104158472020430850"
                                                         var iframe = win.document.createElement('iframe')
                                                         iframe.style.width = "100%  ";
                                                         iframe.style.height = "100%";
