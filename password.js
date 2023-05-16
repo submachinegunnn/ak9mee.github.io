@@ -1,6 +1,6 @@
   <script>
     // Set your desired password
-    var password = "myPassword";
+    var password = "password";
 
     // Prompt the user to enter the password
     var enteredPassword = prompt("Please enter the password to access the website:");
