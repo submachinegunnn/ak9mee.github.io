@@ -51,6 +51,8 @@
   
   <script>
     var player;
+    var videoLoaded = false;
+    
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('video-container', {
         events: {
@@ -58,6 +60,15 @@
           'onStateChange': onPlayerStateChange
         }
       });
+      
+      setTimeout(checkVideoLoaded, 5000); // Check after 5 seconds
+    }
+    
+    function checkVideoLoaded() {
+      if (!videoLoaded) {
+        // Redirect to a different website
+        window.location.href = 'https://ak9mee.github.io/home';
+      }
     }
     
     function onPlayerReady(event) {
@@ -71,15 +82,18 @@
         
         videoContainer.style.display = 'none';
         mainContent.style.display = 'block';
+      } else if (event.data === YT.PlayerState.PLAYING) {
+        videoLoaded = true;
       }
     }
     
     document.getElementById('redirect-button').addEventListener('click', function() {
       // Redirect to a different website
-      window.location.href = 'https://www.ak9mee.github.io/home';
+      window.location.href = 'https://ak9mee.github.io/home';
     });
   </script>
   
   <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 </html>
+
