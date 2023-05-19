@@ -1,99 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Website</title>
   <style>
+    html,
     body {
+      height: 100%;
       margin: 0;
       padding: 0;
-    }
-    
-    #video-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
       overflow: hidden;
-      z-index: 9999;
     }
     
-    #video-container iframe {
-      width: 100%;
-      height: 100%;
-    }
-    
-    #main-content {
-      display: none;
-      text-align: center;
-      padding-top: 20px;
-    }
-    
-    #redirect-button {
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      cursor: pointer;
+    #loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
     }
   </style>
-</head>
-<body>
-  <div id="video-container">
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Yv2hn0Wb_mw?autoplay=1&mute=1&controls=0&showinfo=0&autohide=1" frameborder="0" allowfullscreen></iframe>
-  </div>
-  
-  <div id="main-content">
-    <button id="redirect-button">Continue</button>
-  </div>
-  
   <script>
-    var player;
-    var videoLoaded = false;
-    
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('video-container', {
-        events: {
-          'onReady': onPlayerReady,
-          'onStateChange': onPlayerStateChange
-        }
-      });
-      
-      setTimeout(checkVideoLoaded, 5000); // Check after 5 seconds
-    }
-    
-    function checkVideoLoaded() {
-      if (!videoLoaded) {
-        // Redirect to a different website
-        window.location.href = 'https://ak9mee.github.io/home';
-      }
-    }
-    
-    function onPlayerReady(event) {
-      event.target.playVideo();
-    }
-    
-    function onPlayerStateChange(event) {
-      if (event.data === YT.PlayerState.ENDED) {
-        var videoContainer = document.getElementById('video-container');
-        var mainContent = document.getElementById('main-content');
-        
-        videoContainer.style.display = 'none';
-        mainContent.style.display = 'block';
-      } else if (event.data === YT.PlayerState.PLAYING) {
-        videoLoaded = true;
-      }
-    }
-    
-    document.getElementById('redirect-button').addEventListener('click', function() {
-      // Redirect to a different website
-      window.location.href = 'https://ak9mee.github.io/home';
+    window.addEventListener("load", function () {
+      var loader = document.getElementById("loader");
+      loader.innerText = "100%";
+      setTimeout(function () {
+        loader.style.display = "none";
+      }, 5000);
     });
   </script>
-  
-  <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+  <div id="loader">0%</div>
+  <img src="lucki.gif" style="width: 100%; height: 100%;" alt="Loading GIF">
 </body>
 </html>
-
