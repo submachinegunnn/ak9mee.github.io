@@ -19,3 +19,9 @@ This is completely open-source so you can deploy it by forking or deploying it b
 <a target="_blank" href="https://glitch.com/edit/#!/import/github/submachinegunnn/ak9mee.github.io"><img alt="Remix on Glitch" src="https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/glitch.svg"></a>
 <a target="_blank" href="https://vercel.com/new/clone?repository-url=https://github.com/submachinegunnn/ak9mee.github.io"><img alt="Deploy to Vercel" src="https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/vercel.svg"></a>
 <a target="_blank" href="https://app.netlify.com/start/deploy?repository=https://github.com/submachinegunnn/ak9mee.github.io"><img alt="Deploy to Netlify" src="https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/netlify.svg"></a>
+
+### Info you might want to know after deploying
+
+You might want to fork some repos i have for the site to work such as,
+
+<a target="_blank" href="https://github.com/submachinegunnn/HTML-Minecraft"> (for the design)
