@@ -22,6 +22,7 @@ This is completely open-source so you can deploy it by forking or deploying it b
 
 ### Info you might want to know after deploying
 
-You might want to fork some repos i have for the site to work such as,
+You might want to fork these 2 repos i have for the site to work, such as,
 
-<a target="_blank" href="https://github.com/submachinegunnn/HTML-Minecraft"> (for the design)
+<a target="_blank" href="https://github.com/submachinegunnn/HTML-Minecraft"> (Main Menu Design)
+<a target="_blank" href="https://github.com/submachinegunnn/educationalaudios"> (Music Player)
