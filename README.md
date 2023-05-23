@@ -7,8 +7,12 @@
 <a href="https://github.com/submachinegunnn"><img height="30px" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"><img></a>
 </p>  
 
+### After Public Archive !!
+
+I dont know if you can still deploy after i archived this! But i decided to archive since school is ending, i hope this finds a good purpose after !!
+
 ### Deploying
-Interstellar is completely open-source so you can deploy it by forking or deploying it below.
+This is completely open-source so you can deploy it by forking or deploying it below.
   
 <a target="_blank" href="https://heroku.com/deploy/?template=https://github.com/submachinegunnn/ak9mee.github.io"><img alt="Deploy to Heroku" src="https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/heroku.svg"></a>
 <a target="_blank" href="https://replit.com/github/submachinegunnn/ak9mee.github.io"><img alt="Run on Replit" src="https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/replit.svg"></a>
